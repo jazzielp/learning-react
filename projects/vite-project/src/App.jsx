@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react'
+import typeProps from 'prop-types'
 
 
 const TURNS = {
@@ -21,6 +22,15 @@ const Square = ({ children, isSelected, updateBorad, index }) => {
         </div>
     )
 }
+
+//Validamos los props del componente Square
+Square.propTypes = {
+    children: typeProps.node,
+    isSelected: typeProps.bool,
+    updateBorad: typeProps.func,
+    index: typeProps.number,
+}
+
 
 //Tenemos la combinaciones de ganadores
 const WINNER_COMBINATIONS = [
@@ -79,6 +89,7 @@ function App() {
                 {
                     board.map((_, index) => {
                         return (
+                            //Dibujamos el cuadrado
                             <Square
                                 key={index}
                                 index={index}
