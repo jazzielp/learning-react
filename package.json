@@ -1,0 +1,20 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "These are various projects that we will do to learn react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jazzielp/learning-react.git"
+  },
+  "keywords": [],
+  "author": "Jazziel Puente <Jazziel.puente.v@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jazzielp/learning-react/issues"
+  },
+  "homepage": "https://github.com/jazzielp/learning-react#readme"
+}
